@@ -1,2 +1,3 @@
-# info
-Unorganized information about various software
+# Info
+
+Some information about various software
