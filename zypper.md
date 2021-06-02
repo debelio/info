@@ -7,7 +7,7 @@
 | zypper install (in) git                                        | installing a package                                  |
 | zypper install (in) git-3.5.0-7.x86_64.rpm                     | installing local package                              |
 | zypper download nmap                                           | downloading package (/var/cache/zypp/packages/)       |
-| zypper repos (lr)                                              | available repo                                        |
+| zypper repos (lr) -u                                           | available repo                                        |
 | zypper lr -d                                                   | detailed repo information                             |
 | zypper lr -p                                                   | repo priorities                                       |
 | zypper addrepo (ar) <options> <URI> <alias>                    | add a repo                                            |
@@ -21,14 +21,16 @@
 | zypper rr -t                                                   | remove all repos                                      |
 | zypper search (se) nmap                                        | search for a package                                  |
 | zypper se -i nmap                                              | search for installed package                          |
+| zypper se -s                                                   | list all installed packages                           |
 | zypper info (if) nmap                                          | info about a package                                  |
 | zypper if -s nma                                               | info about a package by not knowing the exact name    |
 | zypper in 'gcc<5.1'                                            | installing package by version (less than 5.1)         |
 | zypper in gcc48-4.8.3+r212056-2.2.4                            | installing package by version (exactly this version)  |
 | zypper in nfs\*                                                | install package by pattern                            |
+| zypper info -t pattern lamp_server                             | get information about a pattern                       |
 | zypper in amarok upd:libxine1                                  | install package from specific repo (using repo alias) |
 | zypper in nmap main                                            | install package from specific repo (using main repo)  |
-| zypper in nano -vi                                             | install one package, remove another                   |
+| zypper in nano -vi                                             | install one package, remove another in one go         |
 | zypper rm apache2                                              | remove a package                                      |
 | zypper rm -t pattern file_server                               | remove all files from the pattern                     |
 | zypper rm -u apache2                                           | remove a package and all hist deps                    |
