@@ -21,7 +21,7 @@
 | zypper rr -t                                                   | remove all repos                                      |
 | zypper search (se) nmap                                        | search for a package                                  |
 | zypper se -i nmap                                              | search for installed package                          |
-| zypper se -s                                                   | list all installed packages                           |
+| zypper se -i                                                   | list all installed packages                           |
 | zypper info (if) nmap                                          | info about a package                                  |
 | zypper if -s nma                                               | info about a package by not knowing the exact name    |
 | zypper in 'gcc<5.1'                                            | installing package by version (less than 5.1)         |
@@ -67,3 +67,4 @@
 | zypper ll                                                      | view locked packages                                  |
 | zypper al MozillaFirefox                                       | add a package lock                                    |
 | zypper rl MozillaFirefox                                       | remove a package lock                                 |
+
