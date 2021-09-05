@@ -14,6 +14,7 @@
 | "" | unnamed register, holds `d`,`c`, `s`, `x` and `y` operations |
 | "0 | holds last `y` |
 | "1 | holds last `d` and `c` |
+| "_ | blackhole register, every operation is gone |
 | `:reg` | view all registers |
 | `:reg "` | view the unnamed register |
 | `{operation}{motion}` | ex. `{delete}{word}`|
@@ -45,9 +46,10 @@
 
 | **Cut / Copy / Paste** | |
 | :---| :---|
-| `d`/`x` | not just delete, cut as well, saves it in the register |
 | `yy` | yank (copy) the entire line including the \n |
-| `4yy` | yank (copy) four lines |
+| `"ayy` | yank the line to the the register "a |
+| `"Ayy` | yank the line and append it to the the register "a |
+| `4yy` | yank four lines |
 | `y$` | yank from the cursor to the end of the line without \n |
 | `y0` | yank from the cursor to the beginning of the line (including the \t)|
 | `y^` | yank from the cursor to the first character at the beginning of the line |
@@ -55,7 +57,7 @@
 | `2yw`/`y2w` | yank two words to the left |
 | `yap` | yank the current paragraph |
 | `p` | put (paste) after the cursor |
-| `P` | put (paste) before the cursor |
+| `P` | put before the cursor |
 | `yi(` | copy everything between `()` |
 | `ya(` | copy everything between `()` including the delimiter `()` |
 | `"4p` | put the text in the register "4 | 
@@ -63,7 +65,7 @@
 
 | **Delete / Change**| |
 | :---| :---|
-| `x`/`dl` | delete the character under the cursor |
+| `x`/`dl` | delete (cut) the character under the cursor, saves it in the register |
 | `X` | delete the character before the cursor |
 | `dw` | delete the word from the cursor including the delimiter |
 | `d$`/`D` | delete from the cursor to the end of the line |
@@ -71,6 +73,8 @@
 | `dd` | delete the whole line no matter the cursor position |
 | `3dd` | delete whole 3 lines no matter the cursor position |
 | `d3w` | delete 3 words from the cursor |
+| `"_dd`| delete the line and send it to the blackhole register |
+| `"2dd`| delete the line and send it to the register 2 |
 | `cw` | delete the word from the cursor and enter in INSERT mode (change) |
 | `c$`/`C` | delete from the cursor to the end of the line and enter in INSERT mode (change) |
 | `c0` | delete from the cursor to the beginning of the line and enter in INSERT mode (change) |
