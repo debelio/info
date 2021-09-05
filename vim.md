@@ -2,7 +2,8 @@
 
 ## Vim tricks
 
-| **Common** | |
+**Common**
+| | |
 | :---| :---|
 | `u`| Undo the last change |
 | `Ctrl-r`| Redo the last undo |
@@ -22,7 +23,8 @@
 | `{operation}{a}{object}` | ex. `{delete}{a}{sentence}`|
 | `{operation}{i}{object}` | ex. `{change}{inner}{word}`|
 
-| **Navigation**| |
+**Navigation**
+| | |
 | :---| :---|
 | `hjkl` | Left, down, up, right |
 | `Enter` | Move one line down to the first character |
@@ -49,7 +51,8 @@
 | `-` | Up one line on the first character |
 | `+` | Down one line on the first character |
 
-| **Append / Edit** | |
+**Append / Edit**
+| | |
 | :---| :---|
 | `a` | Append text after the cursor |
 | `A` | Append text at the end of the line |
@@ -60,8 +63,8 @@
 | `r` | Replace the character without insert |
 | `R` | Replace all characters in secession until `ESC` |
 
-
-| **Cut / Copy / Paste** | |
+**Cut / Copy / Paste**
+| | |
 | :---| :---|
 | `yy` | Yank (copy) the entire line including the \n |
 | `"ayy` | Yank the line to the the register "a |
@@ -79,8 +82,8 @@
 | `ya(` | Copy everything between `()` including the delimiter `()` |
 | `"4p` | Put the text in the register "4 | 
 
-
-| **Delete / Change**| |
+**Delete / Change**
+| | |
 | :---| :---|
 | `x`/`dl` | Delete (cut) the character under the cursor, saves it in the register |
 | `X` | Delete the character before the cursor |
