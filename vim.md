@@ -3,7 +3,7 @@
 ## Vim tricks
 
 **Common**
-| | |
+| Command | Explanation |
 | :---| :---|
 | `u`| Undo the last change |
 | `Ctrl-r`| Redo the last undo |
@@ -24,7 +24,7 @@
 | `{operation}{i}{object}` | ex. `{change}{inner}{word}`|
 
 **Navigation**
-| | |
+| Command | Explanation |
 | :---| :---|
 | `hjkl` | Left, down, up, right |
 | `Enter` | Move one line down to the first character |
@@ -52,7 +52,7 @@
 | `+` | Down one line on the first character |
 
 **Append / Edit**
-| | |
+| Command | Explanation |
 | :---| :---|
 | `a` | Append text after the cursor |
 | `A` | Append text at the end of the line |
@@ -64,7 +64,7 @@
 | `R` | Replace all characters in secession until `ESC` |
 
 **Cut / Copy / Paste**
-| | |
+| Command | Explanation |
 | :---| :---|
 | `yy` | Yank (copy) the entire line including the \n |
 | `"ayy` | Yank the line to the the register "a |
@@ -83,7 +83,7 @@
 | `"4p` | Put the text in the register "4 | 
 
 **Delete / Change**
-| | |
+| Command | Explanation |
 | :---| :---|
 | `x`/`dl` | Delete (cut) the character under the cursor, saves it in the register |
 | `X` | Delete the character before the cursor |
