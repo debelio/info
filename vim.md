@@ -22,6 +22,10 @@
 | `[count]{operation}{motion}` | ex. `[repeat]{delete}{word}`|
 | `{operation}{a}{object}` | ex. `{delete}{a}{sentence}`|
 | `{operation}{i}{object}` | ex. `{change}{inner}{word}`|
+| `v` | visual mode characterwise, press `o` to select both sides |
+| `V` | visual mode linewise |
+| `Ctrl-v` | visual mode blockwise, press `O` to move to the other side of the line |
+| in V-mode | `~` - switch case, `c` - change, `d` - delete, `y` - yank, `r` - replace, `x` -delete, `I` - insert, `A` - append, `J` - join, `u` - make lowercase, `U` - make uppercase, `>` - shift right, `<` - shift left 
 
 **Navigation**
 | Command | Explanation |
@@ -62,6 +66,9 @@
 | `S` | Substitute (delete and insert) the whole line |
 | `r` | Replace the character without insert |
 | `R` | Replace all characters in secession until `ESC` |
+| `J` | Join the bottom line with the current one |
+| `:center 80` | center the line 80 characters to the right |
+| `:left` | realign the text to the left | 
 
 **Cut / Copy / Paste**
 | Command | Explanation |
@@ -116,3 +123,15 @@
 | `Shift-~` | Change the character case (upper, lower) |
 | `Ctrl-a` | Add 1 to the number and replace it (from 3 to 4) |
 | `Ctrl-x` | Subtract 1 from the number and replace it (from 3 to 2) |
+
+**Macros**
+| Command | Explanation |
+| :---| :---|
+| `qa` | Start recording a macro in the `a` register, start with `0`, end with `j`. After you finish press `q` again |
+| `qA` | Append to the `a` macro |
+| `@a` | Execute the `a` macro |
+| `@@` | Execute the most recent macro |
+| `:reg a` | See the recorded macro `a` |
+| `:27,35normal @a` | Execute the macro `a` to the lines 27 until 35 |
+| `:.,$normal @a` | Execute the macro `a` from the first to the last line |
+| `"ap` | Copy the register in the file so you can change and save it again with `"ay$` |
