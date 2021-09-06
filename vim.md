@@ -41,7 +41,7 @@
 | `w` | Move to the next word (the punctuation counts as a word)|
 | `W` | Move to the next word (the punctuation doesn't count as a word)|
 | `b` | Move to the previous word (the punctuation counts as a word)|
-| `B` | Move to the previous word (the punctuation counts as a word)|
+| `B` | Move to the previous word (the punctuation doesn't count as a word)|
 | `$` | Move to the end of the current line |
 | `0` | Move to the beginning of current the line (including TAB)|
 | `^` | Move to the first character in the current line |
