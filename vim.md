@@ -26,6 +26,30 @@
 | `V` | visual mode linewise |
 | `Ctrl-v` | visual mode blockwise, press `O` to move to the other side of the line |
 | in V-mode | `~` - switch case, `c` - change, `d` - delete, `y` - yank, `r` - replace, `x` -delete, `I` - insert, `A` - append, `J` - join, `u` - make lowercase, `U` - make uppercase, `>` - shift right, `<` - shift left 
+| `:ls` | List buffers (multiple files opened) |
+| `:b3` | Open file in buffer 3 |
+| `:bn` | Go to the next buffer file |
+| `:bp` | Go to the previous buffer file |
+| `:bf` | Go to the first buffer file |
+| `:bl` | Go to the last buffer file |
+| `:badd example.txt` | Add the file in a new buffer but don't switch to it |
+| `:bd 2` | Delete a file from the buffer |
+| `:bufdo %s/''/"/g | w` | Substitute the `'` with `"` in all buffers and write the change |
+| `CTrl-^` | Quickly switch to between the previously opened buffer |
+| `:wall` | Save all buffers |
+| `:E` | File explorer window |
+| `:sp`/`Ctrl-w, s` | Split the screen horizontally |
+| `:vs`/`Ctrl-w, v` | Split the screen vertically |
+| `Ctrl-w, q` | Close the current window |
+| `Ctrl-w, o` | Close any other windows except the current one |
+| `Ctrl-w, +/-/</>` | Resize the current window |
+| `Ctrl-w, _` | Maximize the height of the current window |
+| `Ctrl-w, |` | Maximize the width of the current window |
+| `Ctrl-w, =` | Make all windows the same size |
+| `Ctrl-w, r` | Rotate the windows position in the stack to the right |
+| `Ctrl-w, R` | Rotate the windows position in the stack to the left |
+| `Ctrl-w, H/J/K/L` | Rotate the windows positions manually |
+| `:windo %s/''/"/g | w` | Substitute the `'` with `"` in all windows and write the change |
 
 **Navigation**
 | Command | Explanation |
@@ -54,6 +78,7 @@
 | `}` | One paragraph forward |
 | `-` | Up one line on the first character |
 | `+` | Down one line on the first character |
+| `Ctrl-w, w` | Switch between windows |
 
 **Append / Edit**
 | Command | Explanation |
