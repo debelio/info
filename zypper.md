@@ -1,6 +1,6 @@
 ## Zypper
 
-### The defaul package manager on SUSE and OpenSUSE Linux
+### The default package manager on SUSE and OpenSUSE Linux
 
 | **command**                                                    | **explanation**                                       |
 | :------------------------------------------------------------- | :---------------------------------------------------- |
